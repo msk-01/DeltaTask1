@@ -1,6 +1,6 @@
 wget https://inductions.delta.nitt.edu/sysad-task1-attendance.log
 ABC=$(date "+%Y-%m-%d")
-for ((i=1;i<50;i++));do
+for ((i=1;i<51;i++));do
 DEF=$(cat sysad-task1-attendance.log | awk '{print $1}' | sed -n ${i}p sysad-task1-attendance.log)
 if [[ "$ABC" > "$DEF" ]] ;
 then
